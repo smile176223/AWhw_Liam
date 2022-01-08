@@ -1,11 +1,11 @@
-<center> AppWorks School iOS Class Week1</center>
+AppWorks School iOS Class Week1
 -
-####Assignment 1: Git & GitHub
-#####1. GitHub :
+### Assignment 1: Git & GitHub
+#### 1. GitHub :
 	Repository_Name : AWShw_Liam 
  	Link : https://github.com/smile176223/AWShw_Liam
-#####2. Ans:
- * #####git status	
+#### 2. Ans:
+ * ##### git status	
 	查詢該目錄當前的狀態。		
 	Case1 : 在這目錄中當前沒有可以提交的東西。	
 	```
@@ -36,7 +36,7 @@
 		Changes to be committed:
  		 (use "git restore --staged <file>..." to unstage) 
  		 	new file:   .gitignore	
- * #####git add 	
+ * ##### git add 	
 	添加一個新的檔案至該目錄的暫存區。	
 	Case 1 : git add .  添加新的檔案至暫存區(Staging Area)。	
 	```
@@ -51,7 +51,7 @@
 		Changes to be committed:
   		(use "git restore --staged <file>..." to unstage)
 			new file:   .gitignore	
- * #####git commit		
+ * ##### git commit		
 	提交一個檔案至該目錄的儲存庫(Repository)中。	
 	Case 1 :  git commit -m “type something” ，直接在提交檔案時增加一個commit訊息。	
 	```
@@ -63,7 +63,7 @@
 	 	create mode 100644 .gitignore
 	 	
 	 Case 2 : git commit ，提交檔案之後會進入編輯器，編輯commit訊息。
- * #####git log	
+ * ##### git log	
 	查看該目錄過去的commit歷史。	
 	Case 1 : git log ，查看該目錄過去的coomit紀錄。		
 	```
@@ -91,7 +91,7 @@
 		23cfa45 Add .gitignore
 		1c47a38 Initial commit
 		
- * #####git push [ Repo_name ] [ Branch_name ]	
+ * ##### git push [ Repo_name ] [ Branch_name ]	
 	將本機端的分支儲存庫推送至遠端儲存庫中。	
 	Case 1 : 將本機的分支儲存推送至遠端儲存庫。	
 	```
@@ -104,7 +104,7 @@
 	`
 	% git push origin myBranch
 	`
- * #####git remote -v	
+ * ##### git remote -v	
 	檢視本機端的Git目錄的遠端資訊。	
 	Case 1 : git remote -v ，查看遠端資訊。		
 	```
@@ -113,7 +113,7 @@
 	
 		origin	https://github.com/smile176223/AWShw_Liam.git (fetch)
 		origin	https://github.com/smile176223/AWShw_Liam.git (push)
- * #####git branch		
+ * ##### git branch		
 	製作一個新的分支，為了讓多人一起分工協作而分支出去，完成之後再進行Merge。		
 	Case 1 : git branch [ branch_name ] ，新增一個分支		
 	```
@@ -129,11 +129,11 @@
 	在GitHub中複製一份專案的副本，讓使用者可以對著個副本有所有的權限，	
 	並且可以透過Pull Request推送，讓這些變更可以貢獻到原本的專案中。
 
-#####3. Ans:		
+#### 3. Ans:		
 1. 在GitHub中建立一個Repo。	
-	![](/Users/liamhao/Desktop/AWShw_Liam/Week1/AWShw_1.png)
+	![](https://i.imgur.com/1K4k8Rx.png)
 2. 在已經建立好的Repo中找到HTTPS的網址。
-	![](/Users/liamhao/Desktop/AWShw_Liam/Week1/AWShw_2.png)
+	![](https://i.imgur.com/HOBklK3.png)
 3. 在本機端使用 % git clone “https:xxx.git” ，將該儲存庫clone至本機端指定位置。
 4. %git status 確認本機端目錄的狀態。
 5. %git add . 將尚未確認的檔案新增至暫存區中。
