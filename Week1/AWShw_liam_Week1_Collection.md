@@ -27,7 +27,7 @@ for i in 0..<myFriends.count {
 ```swift=
 myFriends[5]
 ```
-Fatal error: Index out of range
+Fatal error: Index out of range    
 原因是myFriends這個Array的Index只有0,1,2,3,4，所以Index 5是不在此Array裡。
 
 ###### 7. 
