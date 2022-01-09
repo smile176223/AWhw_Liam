@@ -46,11 +46,12 @@ let 是用來宣告不會改變的數值，常數(Constants)，無法在後續�
 var 是宣告一個可以改變的數值，變數(Variables)，可以透過後續的加減等計算改變。
 
 ###### 9. 
-開頭小寫開始，之後每個單字開頭為大寫，
+開頭小寫開始，之後每個單字開頭為大寫，且為了提高程式的可讀性，會盡量使用符合邏輯的字詞。    
+例如：如果這個func是要print出一個結果，則可能會以print作為開頭。
  ```swift=
 var currentValue = 0
 var targetValue = 0
-func showAlert()
+func printPassStatus()
 func sliderMoved
 ``` 
 ###### 10. 
