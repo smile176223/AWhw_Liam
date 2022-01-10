@@ -13,9 +13,7 @@ let average = (x + y)/2
 ```
 ##### 3.  
 ```swift=
-let x:Double = 3
-let y:Double = 4
-let average = (x + y)/2
+let record = (Double(x + y))/2
 ```
 * (10/3)是Int型別無小數點位數的數字字元，
 (10.0/3.0)則是Double或是Float型別的有小數點數字字元。

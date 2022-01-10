@@ -5,10 +5,10 @@ let Pi = Double.pi
 let x:Int = 3
 let y:Int = 3
 let average = (x + y)/2
+print(average)
 
-let x2:Double = 3
-let y2:Double = 3
-let average2 = (x2 + y2)/2
+let record = (Double(x + y))/2
+print(record)
 
 var flag:Bool = true
 var inputString:String = "Hello world."
