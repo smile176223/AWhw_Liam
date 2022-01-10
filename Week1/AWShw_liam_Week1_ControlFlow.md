@@ -63,8 +63,12 @@ repeat {
 
 ###### 6. 
 ```swift=
-var isRaining = ["raining": "It's raining. I don't want to work today."]
-print(isRaining["raining"] ?? "Although it's sunny. I still don't want to work today")
+var isRaining = true
+if isRaining == true {
+    print("It's raining. I don't want to work today.")
+}else {
+    print("Although it's sunny. I still don't want to work today")
+}
 ```    
 ###### 7. 
 ```swift=
