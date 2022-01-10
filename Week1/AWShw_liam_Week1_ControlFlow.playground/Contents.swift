@@ -22,7 +22,7 @@ let lottoBumbers = [10,9,8,7,6,5]
 //    print(lottoBumbers[i - 1])
 //    i -= 1
 //}
-//
+
 //var j = 0
 //while j < lottoBumbers.count  {
 //    if j % 2 == 0 {
@@ -50,17 +50,9 @@ let lottoBumbers = [10,9,8,7,6,5]
 //    }
 //}while j < lottoBumbers.count
 
-//let isRaining = ["raining": "It's raining. I don't want to work today."
-//                 ,"sunny":  "Although it's sunny. I still don't want to work today"]
+var isRaining = ["raining": "It's raining. I don't want to work today."]
+print(isRaining["raining"] ?? "Although it's sunny. I still don't want to work today")
 
-let isRaining = ["raining","sunny"]
-for weather in isRaining {
-    if weather == "raining" {
-        print("It's raining. I don't want to work today.")
-    }else {
-        print("Although it's sunny. I still don't want to work today.")
-    }
-}
 
 //var jobLevel = [1: "Member",
 //                2: "Team Leader",

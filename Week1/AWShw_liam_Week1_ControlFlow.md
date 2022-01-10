@@ -21,7 +21,7 @@ for i in 0 ..< lottoBumbers.endIndex where i % 2 == 0{
 ##### 3.
 ```swift=
 var i = lottoBumbers.count
-while i ! 0 {
+while i != 0 {
     print(lottoBumbers[i - 1])
     i -= 1
 }
@@ -63,14 +63,8 @@ repeat {
 
 ###### 6. 
 ```swift=
-let isRaining = ["raining","sunny"]
-for weather in isRaining {
-    if weather == "raining" {
-        print("It's raining. I don't want to work today.")
-    }else {
-        print("Although it's sunny. I still don't want to work today")
-    }
-}
+var isRaining = ["raining": "It's raining. I don't want to work today."]
+print(isRaining["raining"] ?? "Although it's sunny. I still don't want to work today")
 ```    
 ###### 7. 
 ```swift=
