@@ -1,55 +1,58 @@
 import UIKit
 
-let lottoBumbers = [10,9,8,7,6,5]
+let lottoNumbers = [10,9,8,7,6,5]
 
-//for i in lottoBumbers.endIndex - 3 ..< lottoBumbers.endIndex{
-//    print(lottoBumbers[i])
+// 1:
+//for i in lottoNumbers.endIndex - 3 ..< lottoNumbers.endIndex{
+//    print(lottoNumbers[i])
 //}
 //
 
-//for i in lottoBumbers.reversed() {
+// 2:
+//for i in lottoNumbers.reversed() {
 //    print(i)
 //}
 //
 
-//for i in 0 ..< lottoBumbers.endIndex where i % 2 == 0{
-//    print(lottoBumbers[i])
+//for i in 0 ..< lottoNumbers.endIndex where i % 2 == 0{
+//    print(lottoNumbers[i])
 //}
 
-
-//var i = lottoBumbers.count
+// 3:
+//var i = lottoNumbers.count
 //while i != 0 {
-//    print(lottoBumbers[i - 1])
+//    print(lottoNumbers[i - 1])
 //    i -= 1
 //}
 
 //var j = 0
-//while j < lottoBumbers.count  {
+//while j < lottoNumbers.count  {
 //    if j % 2 == 0 {
-//        print(lottoBumbers[j])
+//        print(lottoNumbers[j])
 //        j += 1
 //    } else {
 //        j += 1
 //    }
 //}
 
-//
-//var i = lottoBumbers.count
+// 4:
+//var i = lottoNumbers.count
 //repeat {
-//    print(lottoBumbers[i - 1])
+//    print(lottoNumbers[i - 1])
 //    i -= 1
 //}while i != 0
 //
 //var j = 0
 //repeat {
 //    if j % 2 == 0{
-//        print (lottoBumbers[j])
+//        print (lottoNumbers[j])
 //        j += 1
 //    }else{
 //        j += 1
 //    }
-//}while j < lottoBumbers.count
+//}while j < lottoNumbers.count
 
+// 6:
 var isRaining = ["raining": "It's raining. I don't want to work today."]
 print(isRaining["raining"] ?? "Although it's sunny. I still don't want to work today")
 
@@ -61,6 +64,7 @@ print(isRaining["raining"] ?? "Although it's sunny. I still don't want to work t
 //
 //jobLevel[4] ?? "We don't have this job"
 
+// 7:
 var jobLevel = 5
 switch jobLevel{
 case 1 :

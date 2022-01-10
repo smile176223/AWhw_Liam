@@ -3,34 +3,34 @@ AppWorks School iOS Class Week1
 #### Control Flow
 ##### 1.
 ```swift=
-for i in lottoBumbers.endIndex - 3 ..< lottoBumbers.endIndex{
-    print(lottoBumbers[i])
+for i in lottoNumbers.endIndex - 3 ..< lottoNumbers.endIndex{
+    print(lottoNumbers[i])
 }
 ```
 ##### 2. 
 ```swift=
-for i in lottoBumbers.reversed() {
+for i in lottoNumbers.reversed() {
     print(i)
 }
 ```
 ```swift=
-for i in 0 ..< lottoBumbers.endIndex where i % 2 == 0{
-    print(lottoBumbers[i])
+for i in 0 ..< lottoNumbers.endIndex where i % 2 == 0{
+    print(lottoNumbers[i])
 }
 ```
 ##### 3.
 ```swift=
-var i = lottoBumbers.count
+var i = lottoNumbers.count
 while i != 0 {
-    print(lottoBumbers[i - 1])
+    print(lottoNumbers[i - 1])
     i -= 1
 }
 ```
 ```swift=
 var j = 0
-while j < lottoBumbers.count  {
+while j < lottoNumbers.count  {
     if j % 2 == 0 {
-        print(lottoBumbers[j])
+        print(lottoNumbers[j])
         j += 1
     } else {
         j += 1
@@ -39,9 +39,9 @@ while j < lottoBumbers.count  {
 ```
 ##### 4.
 ```swift=
-var i = lottoBumbers.count
+var i = lottoNumbers.count
 repeat {
-    print(lottoBumbers[i - 1])
+    print(lottoNumbers[i - 1])
     i -= 1
 }while i != 0
 ```
@@ -49,12 +49,12 @@ repeat {
 var j = 0
 repeat {
     if j % 2 == 0{
-        print (lottoBumbers[j])
+        print (lottoNumbers[j])
         j += 1
     }else{
         j += 1
     }
-}while j < lottoBumbers.count
+}while j < lottoNumbers.count
 ```
 ###### 5. 
  while迴圈與repeat-while迴圈的差別為：    
