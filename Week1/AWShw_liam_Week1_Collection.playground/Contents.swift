@@ -9,8 +9,9 @@ var myFriends:[String] = []
 myFriends += ["Ian","Bomi","Kevin"]
 
 myFriends.append("Michael")
-//myFriends.insert("Michael", at: myFriends.endIndex)
 
+//myFriends.insert("Michael", at: myFriends.endIndex)
+myFriends.remove(at: 2)
 myFriends.insert("Kevin", at: 0)
 
 for i in 0..<myFriends.count {

@@ -15,6 +15,7 @@ myFriends.append("Michael")
 ```
 ##### 4.
 ```swift=
+myFriends.remove(at: 2)
 myFriends.insert("Kevin", at: 0)
 ```
 ##### 5. 
