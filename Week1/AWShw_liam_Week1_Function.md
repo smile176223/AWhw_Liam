@@ -3,25 +3,14 @@ AppWorks School iOS Class Week1
 #### Function
 ##### 1.
 ```swift=
-func greet(person: String) -> String{
-    var message = ""
-    if person == "Luke" {
-        message = "Hello, Luke"
-    }else{
-        message = " :< you are not Luke"
-    }
-    return message
+func greet(person: String){
+    print ("Hello,\(person)")
 }
 ```
 ##### 2. 
 ```swift=
 func multiply(a:Int , b:Int = 10){
     print(a*b)
-}
-```
-```swift=
-for i in 0 ..< lottoBumbers.endIndex where i % 2 == 0{
-    print(lottoBumbers[i])
 }
 ```
 ##### 3.
