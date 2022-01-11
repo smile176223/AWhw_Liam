@@ -3,8 +3,8 @@ AppWorks School iOS Class Week1
 #### Function
 ##### 1.
 ```swift=
-func greet(name person: String){
-    print ("Hello,\(person)")
+func greet(person name: String){
+    print ("Hello,\(name)")
 }
 ```
 ##### 2. 

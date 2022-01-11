@@ -1,8 +1,8 @@
 import UIKit
 
 
-func greet(name person: String){
-    print ("Hello,\(person)")
+func greet(person name: String){
+    print ("Hello,\(name)")
 }
 
 func multiply(a:Int , b:Int = 10){
@@ -12,4 +12,4 @@ func multiply(a:Int , b:Int = 10){
 multiply(a: 9)
 
 
-greet(name: "Luke")
+greet(person: "Luke")
