@@ -1,19 +1,22 @@
 import UIKit
 
 // Q1:
+enum Gender {
+    case male
+    case female
+    case undefined
+}
 class Animal {
-    enum Gender {
-        case male
-        case female
-        case undefined
-    }
+    var Gender : Gender
     func eat() {
         print("I eat everything")
     }
+    init(Gender :Gender){
+        self.Gender = Gender
+    }
 }
-var liam = Animal()
+var liam = Animal(Gender: .male)
 liam.eat()
-var liamgender = Animal.Gender.male
 
 
 // Q2:
@@ -32,5 +35,5 @@ class Horse : Animal{
         print("I eat grass and hay or haylage")
     }
 }
-var horse = Horse()
+var horse = Horse(Gender: .male)
 horse.eat()
