@@ -1,6 +1,6 @@
 import UIKit
 
-// Q1:
+///# Q1:
 enum Gender {
     case male
     case female
@@ -19,7 +19,7 @@ var liam = Animal(Gender: .male)
 liam.eat()
 
 
-// Q2:
+///# Q2:
 class Elephant : Animal {
     override func eat() {
         print("I eat naturally growing plants and shrubs")
