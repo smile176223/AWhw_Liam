@@ -1,5 +1,3 @@
-import UIKit
-
 ///# Q1:
 class Animal {
     enum Gender {

@@ -1,5 +1,3 @@
-import UIKit
-
 ///# Error Handling in Swift
 
 enum GuessNumberGameError {
