@@ -63,8 +63,8 @@ class People{
         print(pet)
     }
     func havePetIF(){
-        if self.pet != nil {
-            print(pet!)
+        if let ifpet = pet {
+            print(ifpet)
         }else{
             print("Oops! No Pet!")
         }

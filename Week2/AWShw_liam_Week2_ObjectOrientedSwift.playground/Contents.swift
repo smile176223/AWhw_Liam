@@ -1,15 +1,19 @@
 ///# Q1:
+enum Gender {
+    case male
+    case female
+    case undefined
+}
 class Animal {
-    enum Gender {
-        case male
-        case female
-        case undefined
+    let Gender :Gender
+    init(_ Gender:Gender) {
+        self.Gender = Gender
     }
     func eat() {
         print("I eat everything")
     }
 }
-var liam = Animal()
+var liam = Animal(.male)
 liam.eat()
 
 
@@ -29,9 +33,9 @@ class Horse : Animal{
         print("Horse eat grass and hay or haylage")
     }
 }
-var horse = Horse()
-var tiger = Tiger()
-var elephant = Elephant()
+var horse = Horse(.male)
+var tiger = Tiger(.male)
+var elephant = Elephant(.male)
 horse.eat()
 tiger.eat()
 elephant.eat()
@@ -44,10 +48,11 @@ class Zoo {
         self.weeklyHot = weeklyHot
     }
 }
-let zoo = Zoo(weeklyHot: Tiger())
+let zoo = Zoo(weeklyHot: Tiger(.male))
 zoo.weeklyHot = tiger
 zoo.weeklyHot = elephant
 zoo.weeklyHot = horse
+print(zoo)
 
 
 
@@ -97,8 +102,9 @@ class Q6 {
 }
 
 ///# Q7 What does self mean in an instance method and a type method ?
-/// 在方法中使用self這個屬性可以用來代表實例本身，一般來說在方法中會預設為當前的實例或是方法，但在實例方法中的某個參數名稱與實例方法中的某個屬性名稱相同的時候，
+/// 在實例方法中使用self這個屬性可以用來代表實例本身，一般來說在方法中會預設為當前的實例或是方法，但在實例方法中的某個參數名稱與實例方法中的某個屬性名稱相同的時候，
 ///參數名稱會有優先權，這時候就可以使用self來區分兩者。
+///在型別方法中，self則代表型別本身，而不是型別中的某個實例，而在型別方法中也可以使用類似實例方法中的用法來區分屬性的差異。
 ///EX:
 class Q7{
     var count = 0
