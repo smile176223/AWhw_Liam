@@ -25,14 +25,14 @@ class ViewController: UIViewController {
     @IBAction func segmentedChange(_ sender: Any) {
         if segmentedControl.selectedSegmentIndex == 0 {
             checkLabel.textColor = UIColor.gray
-            checkText.isUserInteractionEnabled = false
+            checkText.isEnabled = false
             checkText.backgroundColor = UIColor.gray
             checkText.text = ""
             accountText.text = ""
             passwordText.text = ""
         }else {
             checkLabel.textColor = UIColor.black
-            checkText.isUserInteractionEnabled = true
+            checkText.isEnabled = true
             checkText.backgroundColor = UIColor.white
             checkText.text = ""
             accountText.text = ""
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             }else if passwordText.text == "" {
                 errorAlert("Password should not be empty!")
             }else{
-                errorAlert("Wrong account or password!")
+                errorAlert("Login fail!")
             }
         }else if segmentedControl.selectedSegmentIndex == 1 {
             if accountText.text == "" , passwordText.text == "", checkText.text == "" {
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             }else if checkText.text == ""{
                 errorAlert("Check should not be empty!")
             }else if passwordText.text != checkText.text {
-                errorAlert("Password must be equal to Check")
+                errorAlert("Signup fail!")
             }else {
                 successAlert("Sign up!")
             }
@@ -108,7 +108,7 @@ class ViewController: UIViewController {
     
     func checkLabelSet() {
         checkLabel.textColor = UIColor.gray
-        checkText.isUserInteractionEnabled = false
+        checkText.isEnabled = false
         checkText.backgroundColor = UIColor.gray
     }
 
